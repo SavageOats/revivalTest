@@ -49,15 +49,6 @@
         window.location.replace('guide.html');
     }
 
-    function checkKey() {
-        const input = document.getElementById('keyInput');
-        if (input.value === SECRET_KEY) {
-            setCookie(COOKIE_NAME, 'granted', COOKIE_DAYS);
-            window.location.replace('guide.html');
-        } else {
-            alert('Неверный ключ');
-        }
-    }
 </script>
 </body>
 </html>
