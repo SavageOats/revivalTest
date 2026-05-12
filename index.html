@@ -12,7 +12,7 @@
 <body>
 <div class="container">
     <h1>Доступ к гайду</h1>
-    <p>Этот гайд доступен только участникам Discord-Revival BnS https://discord.gg/bnsgambler</p>
+    <p>Этот гайд доступен только участникам Discord-<a href="https://discord.gg/bnsgambler">Revival BnS</a></p>
     <p>Напишите боту команду <code>!getguide</code> в личные сообщения.</p>
 </div>
 
@@ -45,7 +45,7 @@
     const urlParams = new URLSearchParams(window.location.search);
     const keyFromUrl = urlParams.get('key');
     if (keyFromUrl && keyFromUrl === SECRET_KEY) {
-        setCookie(COOKIE_NAME, 'granted', COOKIE_DAYS);
+        setCookie(COOKIE_NAME, 'НЕ_СМОТРИ_СЮДА_ТЫ_МЕНЯ_ПОНЯЛ', COOKIE_DAYS);
         window.location.replace('guide.html');
     }
 
